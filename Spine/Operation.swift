@@ -236,11 +236,11 @@ class SaveOperation: ConcurrentOperation {
 	override func execute() {
 		// First update relationships if this is an existing resource. Otherwise the local relationships
 		// are overwritten with data that is returned from saving the resource.
-		if isNewResource {
+		//if isNewResource {
 			updateResource()
-		} else {
-			updateRelationships()
-		}
+		//} else {
+		//	updateRelationships()
+		//}
 	}
 
 	fileprivate func updateResource() {
